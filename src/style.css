@@ -1,0 +1,195 @@
+@font-face {
+    font-family: "Domine";
+    src: url(/fonts/Domine-VariableFont_wght.ttf) format('truetype') ;
+    font-weight: 400;
+  }
+
+@font-face {
+    font-family: "Monty";
+    src: url(/fonts/Montserrat-Bold.ttf) format('truetype') ;
+    
+}  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== FONTS =====*/
+body{
+    
+    font-family: "Domine";
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    background: linear-gradient(to right top, #719fb0, #726a95);
+    color: white;
+    
+      
+}
+
+h2{
+    margin-bottom: 10px;
+    padding-right: 5%;
+    padding-left: 5%;
+    
+}
+.indicatore-aqi{
+    color: #fff;
+    font-size: 108px;
+    text-shadow: 2px 5px rgba(0,0,0, 0.6);
+
+}
+
+.città{
+    font-family: "Monty";
+    
+    
+}
+
+/* ==== BOX STYLING =====*/
+main{
+    min-height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    
+
+    border: none;
+    outline: none;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255,255,255, 0.7));
+    border-radius: 0 20px 0 20px;
+
+    transition: 0.5s ease-out;
+}
+
+button{
+    width: 15vh;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255,255,255, 0.7));
+    transition: 0.5s ease-out;
+
+    outline-style: none;
+}
+
+button:hover{
+    background: rgba(255, 255, 255, 0.7); 
+}
+
+button:active{
+    background-color: white;
+}
+
+
+
+input:focus-visible{
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* === CLASS STYLING ====*/
+
+.glass {
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom,
+     rgba(255, 255, 255, 0.5),
+     rgba(255,255,255, 0.3)
+    );
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(1rem);
+    text-align: center;
+}
+
+.circle1, .circle2{
+    background: white;
+    background: linear-gradient(to right bottom,
+     rgba(255, 255, 255, 0.7),
+     rgba(255,255,255, 0.3)
+    );
+    width: 15em;
+    height: 15rem;
+    position: absolute;
+    border-radius: 50%;
+}   
+
+.circle1{
+    top: 5%;
+    right: 10%;
+}
+
+.circle2{
+    bottom: 5%;
+    left: 10%;
+}
+
+/*===== MAIN COLORS PER JAVASCRIPT ======*/
+
+body.Good{
+    background: linear-gradient(to right top, #81b214, #16c79a); /*green*/
+    color: grey;
+}
+
+body.Moderate{
+    background: linear-gradient(to right top, #ffe227, #ffdf91); /*Yellow*/
+    color: grey;
+}
+
+body.Sensitive{
+    background: linear-gradient(to right top, #ff884b, #ffb26b); /*orange*/
+}
+
+body.Unhealthy{
+    background: linear-gradient(to right top, #ff4646, #ff8585); /*red*/
+}
+
+body.Very{
+    background: linear-gradient(to right top, #9d0191, #fd3a69); /*purple*/
+}
+
+body.Hazard{
+    background: linear-gradient(to right top, #aa3a3a, #a35d6a); /*burgundy*/
+}
+
+
+/*===== MEDIA QUERIES ====*/
+
+@media (max-width: 767px){
+
+    form{
+        width: 60%;
+    } 
+}
+
+.città {
+    
+    margin-bottom: 10px;
+    padding-right: 5%;
+    padding-left: 5%;
+    
+   
+}
