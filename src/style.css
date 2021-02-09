@@ -33,14 +33,14 @@ h2{
     padding-left: 5%;
     
 }
-.indicatore-aqi{
+.aqi-indicator{
     color: #fff;
     font-size: 108px;
     text-shadow: 2px 5px rgba(0,0,0, 0.6);
 
 }
 
-.città{
+.searched-city{
     font-family: "Monty";
     
     
@@ -185,7 +185,7 @@ body.Hazard{
     } 
 }
 
-.città {
+.searched-city {
     
     margin-bottom: 10px;
     padding-right: 5%;
